@@ -44,7 +44,7 @@ function App() {
                <a href="https://www.linkedin.com/in/sankha-subhra-das-625ab6201" ><i className="bx bxl-linkedin"></i></a>
             </div>
             <a href="./files/Sankha subhra das_12021002022109_Resume.pdf" download className="download-btn">DOWNLOAD <span className="u-bolder">CV</span><i className="fa fa-download"></i></a>
-            <a href="./project reports" download className="download-btn">MY PROJECT REPORTS<span className="u-bolder">CV</span><i className="fa fa-download"></i></a>
+            <a href="https://drive.google.com/drive/folders/1HQNmgJXU--Bh_YudNy38qJndBcsmlYG3?usp=drive_link" download className="download-btn">MY PROJECT REPORTS<span className="u-bolder">CV</span><i className="fa fa-download"></i></a>
                 
             
             
