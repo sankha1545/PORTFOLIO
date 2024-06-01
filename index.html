@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link
+    rel="icon"
+    href=
+"./public/files/resume.png"
+    type="image/x-icon"
+/>
+    <link rel="stylesheet" href="./public/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <script src="https://kit.fontawesome.com/98321ed01d.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function SendEmail(event){
+            let name= document.getElementById("name").value;
+            let email= document.getElementById("email").value;
+            let message= document.getElementById("Message").value;
+            let body= "Name:" + name + "<br/> Email:" + email + "<br/> Message:" + message ;
+            document.getElementById('emailForm').reset()
+            // console.log(body);
+
+               Email.send({
+            SecureToken : "3464c605-c932-4a73-a619-ac5a60622641",
+            To : 'sankhasubhradas1@gmail.com',
+            From : "sankhasubhradas1@gmail.com",
+            Subject : "This is the subject",
+            Body : body
+        }).then(
+          message => alert(message)
+        ); 
+          } 
+    </script>
+    
+    <script>
+      var sidemenu= document.getElementById("sidemenu");
+      function openmenu(){
+          sidemenu.style.right="0";
+      
+      }
+      function closemenu(){
+          sidemenu.style.right="-200px";
+      }
+  </script>
+  
+  <script>
+      var tablinks = document.getElementByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+          }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+      }
+  </script>
+    <style>
+        body{
+            background-color:#02050c
+        }
+        h3{
+            color: #f3dede;
+        }
+        h1{
+            color: #fdfafa;
+        }
+        p{
+            color: #faf7f7;
+            font-style:oblique;
+        }
+        img{
+            width:400px ;
+            height: 500px;
+            
+        }
+      
+    
+    </style>
+</head>
+
+<body>
+   
+        
+    <div id="header">
+
+    
+     <div class="container">
+        <nav>
+            <header class="header">
+            <a  class="logo">Portfolio</a>
+       <nav class="navbar" >
+           <ul>
+           <li><a href="#home"><i class="fa fa-home"></i>HOME</a></li> 
+           <li><a href="#About"><i class="glyphicon glyphicon-user"></i> ABOUT </a></li>
+           <li> <a href="#services"><i class="fa-solid fa-laptop-file"></i> MY SERVICES</a></li>
+           <li><a href="#blog"><i class="glyphicon glyphicon-envelope"></i> BLOGS</a></li>
+           <li><a href="#contact"><i class="glyphicon glyphicon-phone"></i>CONTACT</a></li>
+            
+           </ul>
+           </nav>
+           </header>
+          
+         
+          </nav>
+ 
+         <div id="home">
+         <div class="home">
+         <div class="home-content">
+            
+            <h3>HELLO, I' M</h3>
+            <h1>Sankha Subhra Das</h1>
+            <p class="text">A versatile  enthusiastic full-stack web developer.</p>
+            <div class="social-handles">
+                <a href="https://www.facebook.com/profile.php?id=100009439325830&mibextid=ZbWKwL" ><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+               <a href="https://instagram.com/6t9_riot_2.o?igshid=NGExMmI2YTkyZg==" ><i class="bx bxl-instagram-alt"></i></a>
+               <a href="https://www.linkedin.com/in/sankha-subhra-das-625ab6201" ><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <a href="./public/files/Sankha subhra das_12021002022109_Resume.pdf" download class="download-btn">DOWNLOAD <span class="u-bolder">CV</span><i class="fa fa-download"></i></a>
+            <a href="./public/files/ reports.zip" download class="download-btn">MY PROJECT REPORTS<span class="u-bolder">CV</span><i class="fa fa-download"></i></a>
+                
+            
+            
+         </div>
+        </div>
+         <div>
+         </div>
+         </div>
+         </div>
+        
+    
+         <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./public/files/bg.jpeg" alt=""/>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Welcome to my portfolio! I'm Sankha subhra das, a passionate and versatile full-stack web developer with a love for crafting dynamic and user-centric digital experiences. I am a freasher in the industry, I thrive on turning ideas into reality and solving complex challenges with elegant and efficient solutions.
+
+                            From a young age, I was captivated by technology and its power to shape the world around us. This fascination led me to pursue a degree in Computer Science, where I honed my skills in web development, programming languages like JavaScript, Python, and PHP, and a range of frameworks including React, Node.js, and Django.
+                            
+                            Throughout my journey, I've had the privilege of working with a diverse range of clients and projects, each presenting its unique set of opportunities and obstacles. Whether it's building intuitive user interfaces, optimizing back-end performance, or creating scalable and secure databases, I embrace each task with enthusiasm and attention to detail.
+                            
+                            What truly sets me apart is my dedication to creating seamless user experiences. I believe that the heart of any successful web application lies in understanding the end-users and tailoring the product to meet their needs. Accessibility, responsiveness, and simplicity are at the core of my development philosophy, ensuring that the end product delights users across all devices and platforms.
+                            
+                            I'm a firm believer in continuous learning, and the ever-evolving world of technology keeps me on my toes. I actively seek out opportunities to expand my knowledge, stay updated on the latest industry trends, and experiment with new technologies to deliver cutting-edge solutions.
+                            
+                            Collaboration is key to success in any project, and I take great pride in being a team player. Working closely with designers, product managers, and fellow developers, I thrive in an environment that encourages open communication, creativity, and constructive feedback.
+                            
+                            In my spare time, you can find me exploring new coding challenges, contributing to open-source projects, or seeking inspiration from various design and tech communities. When I'm not in front of a screen, I love hiking in nature, discovering new cuisines, and pursuing creative hobbies like photography and sketching.
+                            
+                            I'm excited about the endless possibilities that lie ahead in the web development realm. If you have a project in mind or want to connect, don't hesitate to reach out. Let's collaborate and bring your ideas to life in the digital world!</p>
+                           
+                           
+                           
+                            
+                            
+                        </div>
+                    
+        
+                    </div>
+                </div>
+            </div>
+            
+        <!--services-->
+        <div id="services">        
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div class="services-list">
+                        <div> 
+                            <i class="fas fa-code"></i>
+                            <h2>Web Development</h2>
+                            <p>
+                               Web app development involves creating applications that run on web browsers and provide specific functionalities or services to users. These applications can be accessed over the internet and don't require users to download or install anything locally. 
+                            </p>
+                            <a href="./webdev(learnmore).html"><b><u>learn more</u></b></a>
+                        </div>
+
+                
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>
+                           App development refers to the process of creating software applications for mobile devices such as smartphones and tablets. These applications, commonly known as mobile apps, can be installed and run directly on the device, providing users with various functionalities and services.
+                        </p>
+                        <a href="./appdev(learnmore).html"><b><u>learn more</u></b></a>
+                    </div>
+                    <div> 
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Management</h2>
+                        <p>
+                            Database management refers to the process of efficiently and securely managing and organizing data within a database system. It involves various tasks, from designing the database structure to ensuring data integrity, security, and performance.
+                        </p>
+                        <a href="./datbasemangement.html"><b><u>learn more</u></b></a>
+                 </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+        
+    
+    <script src="./mycv1.js"></script>
+
+    
+    <section id="blog">
+        <div class="blog-heading">
+            <span><b>My recent Posts</b></span>
+            <h1>BLOGS</h1>
+        </div>
+
+        <div class="blog-container">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./public/files/blog.jpeg" alt="Blog" >
+                </div>
+            <div class="blog-text">
+                <span>ROAD-MAP OF A FULL-STACK WEB DEVELOPER</span>
+                <a href="https://sankha.hashnode.dev/roadmap-of-a-full-stack-web-developer" class="blog-title">a proper guide to full-stack web development</a>
+                <p>As a full-stack web developer, my goal is to have excellence in both front-end and back-end technologies, as well as other relevant skills. So here I am going to explain the roadmap for aspiring full-stack web developers in more detail.</p>
+            </div>
+            </div>
+            <!--blog2-->
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./public/files/og.jpeg" alt="Blog">
+                </div>
+            <div class="blog-text">
+                <span>MY FIRST STEP OF BEING A FULL-STACK WEB DEVELOPER</span>
+                <a href="https://sankha.hashnode.dev/my-first-step-html-css-and-javascript" class="blog-title">This blog is a report on my  first step towards being a full-stack web developer.</a>
+                <p>Introduction
+
+                    I was both excited and a little anxious to start my trip into the world of web programming and learn HTML, CSS, and JavaScript. I've always been fascinated by the seamless web experiences we see regularly as tech fans. I had no idea that exploring these foundational technologies would lead to a myriad of new opportunities. I wish to discuss my struggles and experiences learning about HTML, CSS, and JavaScript web development in my blog.</p>
+                <a href="">Read More</a>
+            </div>
+            </div>
+           
+        </div>
+    </section>
+    <div id="contact">
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="bi bi-envelope"></i>sankhasubhradas1@gmail.com</p>
+                   <p><i class="fas fa-phone-square-alt"></i>+91 8597786209</p>
+                </div>
+                
+             
+            </div>
+            
+            <form id="emailForm" onsubmit="SendEmail(event)">
+                <div  class="form-input">
+                    
+                        <input type="text"  id="name" placeholder="Your Name" required >
+                </div>
+                <div class="form-input">
+                    <input type="email"  id="email" placeholder="Your Email" required>
+                </div>
+                       <div class="form-input">
+                        <textarea  rows="6" id="Message" placeholder="Your Message"></textarea>
+                       </div> 
+                       <div class="form-input-btn" >
+                        <button type="submit" class="btn" value = "Send" onclick="SendEmail()" >Submit</button>
+                    
+                    </div>
+                </form>
+                
+        </div>
+    </div>
+       
+       
+    </div>
+   
+    
+    
+    
+</body>
+
+</html>
